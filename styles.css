@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    overflow-x: hidden;
 }
 
 :root{
@@ -16,20 +17,18 @@ body{
 
 header{
     position:absolute;
-    top:0px;
+    top:15px;
     z-index:3;
 }
 
 .nav-container{
     display: inline-block;
     width:100vw;
-    height:16vh;
-    padding:5px 20px;
+    padding:5px 20px;   
 }
 
 .nav-bar{
     width:80vw;
-    height:100%;
     margin:auto;
     display:flex;
     justify-content:space-between;
@@ -37,8 +36,7 @@ header{
 }
 
 .logo{
-    width:15vw;
-    height:100%;
+    width:170px;
     padding:5px 10px;
     display:flex;
     justify-content: center;
@@ -46,24 +44,20 @@ header{
 }
 
 .logo img{
-    width:11vw;
-    height:80%;
     object-fit:contain;
 }
 
 .nav-right-box{
     width:25vw;
-    height:80%;
     display: flex;
     justify-content:center;
     align-items:center;
-    gap:2.5vw;
+    gap:20px;
     padding:5px 10px;
 }
 
 .language-button{
-    height:60%;
-    padding:4px 10px;
+    padding:7px 15px;
     border-radius: 5px;
     border:1px solid rgb(121, 117, 117);
     font-size:1rem;
@@ -78,11 +72,10 @@ header{
 }
 
 .signin-button{
-    height:60%;
-    padding:4px 18px;
+    padding:7px 15px;
     border-radius: 5px;
     border:none;
-    font-size:0.9rem;
+    font-size:1rem;
     color:white;
     background-color: red;
     cursor: pointer;
@@ -98,7 +91,7 @@ header{
 
 .hero-container{
     width:100vw;
-    height:98vh;
+    height:115vh;
     position:relative; 
     top:0px;
     overflow: hidden; 
@@ -106,12 +99,12 @@ header{
 }
 
 .back-img{
-    object-fit:contain;
+    object-fit:cover;
     object-position: center center;
 }
 
 .black-filter{
-    width:100vw;
+    width:100%;
     height:100%;
     position:absolute;
     top:0px;
@@ -121,23 +114,20 @@ header{
 
 .signin-container{
     width:100vw;
-    height:45vh;
     position:absolute;
-    top:40vh;
+    top:40%;
 }
 
 .content-container{
-    width:60vw;
-    height:100%;
     margin:auto;
 
     display:flex;
     flex-direction:column;
     justify-content: space-evenly;
+    gap:22px;
 }
 
 .heading1{
-    width:100%;
     color:white;
     font-size:3.1rem;
     text-align:center;
@@ -147,7 +137,6 @@ header{
 }
 
 .heading2{
-    width:100%;
     color:rgb(255, 255, 255);
     font-size:1.8rem;
     text-align:center;
@@ -155,7 +144,6 @@ header{
 }
 
 .heading3{
-    width:100%;
     color:rgb(255, 255, 255);
     font-size:1.6rem;
     text-align:center;
@@ -163,31 +151,28 @@ header{
 }
 
 .email-container{
-    width:100%;
-    height:9vh;
+    height:60px;
     display: flex;
     justify-content:center;
     gap:12px;
 }
 
 .email-box{
-    width:26vw;
-    height:100%;
-    padding-left:15px;
+    width:400px;
+    padding-left:10px;
     font-size:1.1rem;
     background-color:black;
     color:white;
     border:1px solid rgb(131, 130, 130);
-    border-radius:5px;
+    border-radius:6px;
     opacity:0.85;
 }
 
 .start-button{
-    width:15vw;
-    height:100%;
+    padding:4px 20px;
     text-align:center;
     font-size:1.4rem;
-    border-radius:5px;
+    border-radius:6px;
     background-color: red;
     color:white;
     font-weight:bolder;
@@ -201,7 +186,6 @@ header{
 .first{
     padding:30px 0px;
     height:78vh;
-    width:100vw;
     border-bottom: var(--border);
 }
 
@@ -218,7 +202,7 @@ header{
  .first-leftBox{
     width:50%;
     height:100%;
-    padding:10px;
+    padding:5px;
 
     display:flex;
     flex-direction:column;
@@ -253,7 +237,7 @@ header{
 .first-rightBox img{
     width:100%;
     height:100%;
-    padding: 10px;
+    padding: 5px;
     position:absolute;
     top:0px;
     object-fit: contain;
@@ -263,7 +247,7 @@ header{
 .first-rightBox video{
     width: 100%;
     height: 55%;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     top:80px;
 } 
@@ -279,7 +263,7 @@ header{
 .third-rightBox img{
     width:100%;
     height:100%;
-    padding: 10px;
+    padding: 5px;
     position:absolute;
     top:0px;
     object-fit: contain;
@@ -289,7 +273,7 @@ header{
 .third-rightBox video{
     width: 100%;
     height: 48%;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     top:50px;
 } 
@@ -355,6 +339,7 @@ header{
 .faq-signin-container{
     width:100vw;
     height:30vh;
+    margin-top:50px;
 }
 
 
@@ -403,143 +388,273 @@ footer{
 }
 
 
-@media(max-width:960px){
-    .hero-container{
-        height:80vh;
-    }
 
+
+
+@media(min-width:961px) and (max-width:1060px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-bar{
+        width:100vw;
+        padding:0px 30px;
+    }
+    .nav-right-box{
+        width:30vw;
+    }
+    .language-button{
+        font-size:0.9rem;
+    }
+    .signin-button{
+        font-size:0.9rem;
+    }
+}
+
+@media(min-width:600px) and (max-width:960px){
+    .nav-bar{
+        width:100vw;
+        padding:0px 30px;
+    }
+    .logo{
+        width:120px;
+    }
+    .nav-right-box{
+        width:40vw;
+    }
+    .language-button{
+        padding:7px 7px;
+        font-size:0.9rem;
+    }
+    .signin-button{
+        padding:7px 7px;
+        font-size:0.9rem;
+    }
     .signin-container{
-        height:40vh;
-        top:25vh;
+        width:100vw;
+        top:40%;
     }
-
+    .content-container{
+        width:65%;
+    }
     .heading1{
-        font-size:2.1rem;
+        font-size:2.2rem;  
     }
-    
     .heading2{
-        font-size:1.4rem;
+        font-size:1.3rem;
+    }
+    .heading3{
+        font-size:1.2rem;
+    }
+    .email-box{
+        width:300px;
+        font-size:1.2rem;
     }
     
-    .heading3{
+    .start-button{
+        width:190px;
+        padding:4px 20px;
         font-size:1.1rem;
     }
-
     .first{
-        padding:20px 0px;
-        height:100vh;
+        width:100%;
+        height:600px;
+        padding:10px;
     }
-
     .first-container{
-        flex-direction:column;
+        flex-direction: column;
+    }
+    .first-leftBox{
+        width:100%;
+        height:20%;
     }
     
-    .first-leftBox{
-        width:90%;
-        height:30%;
-        margin:auto;
-        text-align:center;
-    }
-
     .first-leftBox h1{
-        width:100%;
-        color:white;
-        font-size:2.5rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight:bolder;
+        font-size:2.1rem;
+        text-align: center;
     }
     
     .first-leftBox p{
         width:100%;
-        color:white;
-        font-size:1.3rem;
-        font-family: 'Times New Roman', Times, serif;
+        font-size:1.25rem;
+        text-align: center;
     }
-
+    
     .first-rightBox{
-        width:90%;
-        height:100%;
-        position:relative;
-        top:0px;
-    }
-    
-    .first-rightBox img{
         width:100%;
-        height:100%;
-        padding: 10px;
-        position:absolute;
-        top:0px;
-        object-fit: contain;
-        z-index:3;
+        height:70%;
     }
-    
-    .first-rightBox video{
-        width: 100%;
-        height: 55%;
-        padding: 10px;
-        position: absolute;
-        top:80px;
-    } 
-
+    .second-leftBox,.fourth-leftBox{
+        height:29%;
+    }
     .second,.fourth{
+        display:flex;
         flex-direction:column-reverse;
     }
-
     .third-rightBox{
+        width:100%;
+        height:70%;
+    }
+    .third-rightBox video{
+        height: 45%;   
+    } 
+    .faq-heading h1 {
+        font-size: 2.5rem;
+    }
+    .faq-item {
+        width: 90vw;
+    }
+    .question {
+        font-size: 1.3rem;
+    }
+    .faq-item i{
+        font-size: 1.3rem;
+    }
+    .footer-links{
+        grid-template-columns: repeat(2,1fr);
+    }  
+}
+
+
+@media(min-width:370px) and (max-width:599px){
+    .nav-container{
+        padding:5px 5px;   
+    }
+    .nav-bar{
+        width:95vw;
+        padding:0px 0px;
+    }
+    .logo{
+        width:100px;
+    }
+    .nav-right-box{
+        width:55vw;
+    }
+    .language-button{
+        padding:7px 7px;
+        font-size:0.8rem;
+    }
+    .signin-button{
+        padding:7px 7px;
+        font-size:0.8rem;
+    }
+    .signin-container{
+        width:100vw;
+        top:30%;
+    }
+    .content-container{
         width:90%;
     }
-
-    .faq-heading h1{
-        padding:20px;
-        font-size:2.5rem;
+    .heading1{
+        font-size:1.8rem;  
     }
-
-    .question{
-        font-size: 1.4rem;
+    .heading2{
+        font-size:1.1rem;
     }
-    
-    .faq-item i{
-        font-size:1.6rem;
-    }
-
-    .footer-links{
-        grid-template-rows:repeat(8,30px);
-        grid-template-columns: repeat(2,1fr);
-        gap:15px;
-    }
-
-}
-
-@media(max-width:650px){
-
-    .signin-container{
-        height:50vh;
-        top:25vh;
+    .heading3{
+        font-size:1rem;
     }
     .email-container{
-        height:18vh;
-        flex-direction: column;
+        flex-direction:column;
         justify-content: center;
-        align-items: center;
-        
+        align-items:center;
+        height:100px;
     }
-
     .email-box{
+        width:80vw;
+        height:50px;
+        font-size:0.9rem;
+    }
+    .start-button{
+        padding:8px 20px;
+        font-size:0.9rem;
+    }
+    .hero-container{
+        height:82vh;
+    }
+    .first{
         width:100%;
-        height:40%;
-        padding-left:15px;
-        font-size:1.1rem;
-        background-color:black;
-        color:white;
-        border:1px solid rgb(131, 130, 130);
-        border-radius:5px;
-        opacity:0.85;
+        height:450px;
+        padding:10px;
+    }
+    .first-container{
+        flex-direction: column;
+    }
+    .first-leftBox{
+        width:100%;
+        height:29%;
+    }
+    .first-leftBox h1{
+        font-size:1.8rem;
+        text-align: center;
+    }
+    .first-leftBox p{
+        width:100%;
+        font-size:1rem;
+        text-align: center;
+    }
+    .first-rightBox{
+        width:100%;
+        height:70%;
+    }
+    .second-leftBox,.fourth-leftBox{
+        height:48%;
+    }
+    .second,.fourth{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .third-rightBox{
+        width:100%;
+        height:70%;
+    }
+    .third-rightBox video{
+        height: 40%;   
+    } 
+    .faq-heading h1 {
+        font-size: 1.8rem;
+        padding:5px;
+    }
+    .faq-item {
+        width: 90vw;
+    }
+    .question {
+        font-size: 1.2rem;
+    }
+    .faq-item i{
+        font-size: 1.2rem;
+    }
+     
+    footer{
+        padding:15px;
+    }
+    .footer-container{
+        padding:2px;
     }
     
-    .start-button{
-        width:40%;
-        height:36%;
-        font-size:1.1rem;
-        
+    .contact p{
+        font-size: 0.9rem;
+        margin:10px 0px;
+    }
+    
+    .footer-links{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        row-gap: 20px;
+    } 
+    
+    .footer-links a{
+        font-size: 0.9rem;
+    }
+    
+    .footer-language-button{
+        width:30vw;
+        height:60%;   
+    }
+    
+    .netflix-india p{
+        margin:15px 0px;
+        font-size: 0.9rem;
     }
 }
+
+
