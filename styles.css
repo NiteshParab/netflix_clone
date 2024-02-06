@@ -577,7 +577,7 @@ footer{
         padding:10px;
     }
     .first-container{
-        flex-direction: column;
+        flex-direction:column;
     }
     .first-leftBox{
         width:100%;
